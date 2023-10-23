@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class TipoEstado : BaseEntity
+    public class Genero : BaseEntity
     {
         public string Descripcion { get; set; }
 
-        public ICollection<Estado> Estados { get; set; }
+        public  ICollection<Prenda> Prendas { get; set; }
     }
 }

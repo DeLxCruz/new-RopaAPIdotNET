@@ -5,8 +5,11 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class TipoPersona
+    public class TipoPersona : BaseEntity
     {
-        
+        public string Nombre { get; set; }
+
+        public ICollection<Cliente> Clientes { get; set; }
+        public ICollection<Proveedor> Proveedores { get; set; }
     }
 }

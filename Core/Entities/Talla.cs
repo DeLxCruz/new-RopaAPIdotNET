@@ -5,8 +5,11 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class Talla
+    public class Talla : BaseEntity
     {
-        
+        public string Descripcion { get; set; }
+
+        public ICollection<DetalleVenta> DetallesVenta { get; set; }
+        public ICollection<InventarioTalla> InventariosTalla { get; set; }        
     }
 }
