@@ -15,5 +15,6 @@ namespace Core.Entities
 
         public ICollection<DetalleOrden> DetallesOrden { get; set; }
         public ICollection<Orden> Ordenes { get; set; }
+        public ICollection<Prenda> Prendas { get; set; }
     }
 }

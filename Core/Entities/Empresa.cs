@@ -14,5 +14,6 @@ namespace Core.Entities
         public DateOnly FechaCreacion { get; set; }
         [Required]
         public int IdMun { get; set; }
+        public Municipio Municipios { get; set; }
     }
 }
